@@ -23,7 +23,8 @@ h2 {
     font-size: 1.7em;
     text-align: right;
     color: plum;
-    letter-spacing: 0.9vw;
+    letter-spacing: 0.4vw;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -36,10 +37,15 @@ h3 {
     margin: 5.5em 0;
 }
 
-p i {
+#arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     color: plum;
     font-size: 2em;
-    margin: 1em 50% 0;
 }
 
 h5 {
@@ -59,27 +65,26 @@ p:last-child {
 
 a {
     text-decoration: none;
-    color: plum;
-}
-
-a:link {
-    text-decoration: none;
-    color: plum;
+    color: pink;
 }
 
 a:hover {
     color: white;
-    text-shadow: 2px 2px plum;
+    text-shadow: 2px 2px pink;
 }
 
 
 /**** NAVIGATION ****/
 
-.octo {
+nav > a {
     height: 65px;
     margin-left: 1em;
     margin-top: 1em;
     margin-right: auto;
+}
+
+nav img {
+    height: 65px;
 }
 
 nav {
@@ -112,7 +117,7 @@ li {
     line-height: 1.6em;
     font-family: aclonica, sans-serif;
     text-transform: uppercase;
-    color: mediumorchid;
+    color: pink;
 }
 
 li:last-child {
@@ -137,12 +142,12 @@ article p {
     padding: 0 2em;
 }
 
-article:hover {
+section article:hover {
     background-image: linear-gradient(-30deg, midnightblue, pink);
     image-filter: saturate(100);
 }
 
-article:hover p {
+section article:hover p {
     color: white;
 }
 
@@ -182,9 +187,12 @@ article p:first-of-type {
 /**** DETAIL PAGINA ****/
 
 .details {
-    width: 100vw;
-    background-image: linear-gradient(-30deg, midnightblue, pink);
     padding: 2vw;
+}
+
+.details h2 {
+    text-align: left;
+    color: pink;
 }
 
 .details img {
