@@ -17,7 +17,7 @@
 
     <header>
         <nav>
-            <img src="images/monogram.png" alt="logo">
+            <a href="index.html"><img src="images/monogram.png" alt="logo"></a>
             <ul>
                 <li><a href="index.html">work</a></li>
                 <li><a href="me.html">me</a></li>
@@ -27,17 +27,17 @@
     </header>
 
     <main>
-        <h3 id="contacthead">contact</h3>
+        <h3 id="head">contact</h3>
         <section>
             <form action="">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name"><br>
+                <input type="text" required name="name" id="name">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email"><br>
+                <input type="email" required name="email" id="email"><br>
                 <label for="eyecolor">Eye colour</label>
                 <input type="color" name="ecolor" id="eyecolor"><br>
                 <label for="message">Your Message</label>
-                <textarea id="message" name="subject" placeholder="Write something interesting.."></textarea><br>
+                <textarea id="message" required name="subject" placeholder="Write something interesting.."></textarea><br>
                 <input type="submit" value="Submit">
             </form>
         </section>
