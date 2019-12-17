@@ -12,14 +12,14 @@ body {
 
 h1 {
     color: plum;
-    font-family: aclonica, sans-serif;
+    font-family: play, sans-serif;
     font-size: 2em;
     margin-bottom: 0;
     margin-left: 1%;
 }
 
 h2 {
-    font-family: aclonica, sans-serif;
+    font-family: play, sans-serif;
     font-size: 1.7em;
     text-align: right;
     color: plum;
@@ -29,12 +29,35 @@ h2 {
 
 h3 {
     color: white;
-    text-shadow: 4px 4px midnightblue;
-    font-family: aclonica;
+    text-shadow: 5px 4px midnightblue;
+    font-family: play;
     text-align: center;
     text-transform: uppercase;
-    font-size: 3em;
-    margin: 5.5em 0;
+    font-size: 4em;
+    margin: 4.5em 0 0;
+}
+
+h4 {
+    font-family: play, sans-serif;
+    text-align: center;
+    color: plum;
+    margin-bottom: 12em;
+    opacity: 0;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+h4.yay {
+    opacity: 1;
+}
+
+button {
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 
 #arrow {
@@ -65,12 +88,12 @@ p:last-child {
 
 a {
     text-decoration: none;
-    color: pink;
+    color: midnightblue;
 }
 
 a:hover {
     color: white;
-    text-shadow: 2px 2px pink;
+    text-shadow: 2px 2px midnightblue;
 }
 
 
@@ -84,26 +107,23 @@ nav > a {
 }
 
 nav img {
-    height: 65px;
+    height: 55px;
 }
 
 nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
 }
 
-nav ul {
-    -webkit-box-shadow: 4px 2px midnightblue;
-    box-shadow: 4px 2px midnightblue;
-}
 
 ul {
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: white;
+    background: none;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -117,7 +137,7 @@ li {
     line-height: 1.6em;
     font-family: aclonica, sans-serif;
     text-transform: uppercase;
-    color: pink;
+    color: midnightblue;
 }
 
 li:last-child {
@@ -179,15 +199,12 @@ article img {
     min-height: 8em;
 }
 
-article p:first-of-type {
-    text-align: right;
-}
-
 
 /**** DETAIL PAGINA ****/
 
 .details {
     padding: 2vw;
+    border: none;
 }
 
 .details h2 {
@@ -206,4 +223,5 @@ article p:first-of-type {
 
 .details p {
     max-width: 70ch;
+    text-align: left;
 }
