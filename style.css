@@ -3,6 +3,7 @@
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    border: none;
 }
 
 body {
@@ -224,4 +225,87 @@ article img {
 .details p {
     max-width: 70ch;
     text-align: left;
+}
+
+
+/**** CONTACT ****/
+
+#contacthead {
+    margin-top: 1em;
+    margin-bottom: 0.5em
+}
+
+form {
+    background: #F2F2F2;
+    border: 10px dashed midnightblue;
+    border-radius: 0.3em;
+    padding: 3em 2em;
+    margin: 1em 3em;
+}
+
+label {
+    float: left;
+    text-align: right;
+    margin-right: 15px;
+    width: 100px;
+    font-family: play;
+}
+
+input {
+    height: 2em;
+    width: 12em;
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin-bottom: 7%;
+}
+
+input[type=submit] {
+    margin: 3em 30% 0;
+    height: 3em;
+    font-family: play;
+    text-transform: uppercase;
+    background: midnightblue;
+    border-radius: 0.8em;
+    color: white;
+}
+
+input[type=submit]:focus,
+input[type=submit]:hover {
+    background: plum;
+}
+
+textarea {
+    height: 2em;
+    width: 12em;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input:hover,
+textarea:hover {
+    outline: 2px solid plum;
+}
+
+textarea:focus {
+    height: 4em;
+    width: 18em;
+}
+
+input:focus {
+    width: 18em;
+    outline: 2px solid midnightblue;
+}
+
+input:invalid {
+    outline: 2px solid red;
+}
+
+input[type=submit],
+input[type=color] {
+    outline: none;
+}
+
+input[type=submit]:focus,
+input[type=color]:focus {
+    width: 12em;
 }
