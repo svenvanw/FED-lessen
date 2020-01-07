@@ -227,7 +227,7 @@ article img {
 
 .details h2 {
     text-align: left;
-    color: pink;
+    color: black;
 }
 
 .details img {
@@ -240,6 +240,7 @@ article img {
 }
 
 .details p {
+    font-size: 1.2em;
     max-width: 70ch;
     color: black;
     text-align: left;
@@ -250,7 +251,8 @@ article .phonesgrid {
     grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 1em;
     column-gap: 3vw;
-    grid-row-gap: 2vw;
+    grid-row-gap: 5vw;
+    padding: 0 7vw;
 }
 
 .phonesgrid img {
@@ -267,125 +269,125 @@ article .phonesgrid {
 @media (min-width: 80em) {
     article .phonesgrid {
         padding: 0 8vw;
-}
+    }
 
 
-/**** ABOUT ****/
-.about {
-    padding: 2vw;
-    border: none;
-}
+    /**** ABOUT ****/
+    .about {
+        padding: 2vw;
+        border: none;
+    }
 
-.about h2 {
-    text-align: left;
-    color: pink;
-}
+    .about h2 {
+        text-align: left;
+        color: pink;
+    }
 
-.about img {
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: top;
-    object-position: top;
-    width: 100%;
-    height: 20em;
-    margin: 0;
-    padding: 0;
-    -webkit-filter: saturate(0);
-    filter: saturate(0);
-}
+    .about img {
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: top;
+        object-position: top;
+        width: 100%;
+        height: 20em;
+        margin: 0;
+        padding: 0;
+        -webkit-filter: saturate(0);
+        filter: saturate(0);
+    }
 
-.about p {
-    max-width: 70ch;
-    text-align: left;
-}
-
-
+    .about p {
+        max-width: 70ch;
+        text-align: left;
+    }
 
 
-/**** CONTACT ****/
 
-#head {
-    margin-top: 1em;
-    margin-bottom: 0.5em
-}
 
-form {
-    -webkit-box-shadow: 0.3em 0.3em midnightblue;
-    box-shadow: 0.3em 0.4em midnightblue;
-    padding: 3em 2em;
-    margin: 1em 3em;
-}
+    /**** CONTACT ****/
 
-label {
-    float: left;
-    text-align: right;
-    margin-right: 15px;
-    width: 100px;
-    font-family: play;
-}
+    #head {
+        margin-top: 1em;
+        margin-bottom: 0.5em
+    }
 
-input {
-    border: 2px solid midnightblue;
-    height: 2em;
-    width: 12em;
-    -webkit-transition: .5s;
-    transition: .5s;
-    margin-bottom: 7%;
-}
+    form {
+        -webkit-box-shadow: 0.3em 0.3em midnightblue;
+        box-shadow: 0.3em 0.4em midnightblue;
+        padding: 3em 2em;
+        margin: 1em 3em;
+    }
 
-#eyecolor {
-    border: none;
-}
+    label {
+        float: left;
+        text-align: right;
+        margin-right: 15px;
+        width: 100px;
+        font-family: play;
+    }
 
-input[type=submit] {
-    margin: 3em 30% 0;
-    height: 3em;
-    font-family: play;
-    text-transform: uppercase;
-    background: midnightblue;
-    border-radius: 0.8em;
-    color: white;
-}
+    input {
+        border: 2px solid midnightblue;
+        height: 2em;
+        width: 12em;
+        -webkit-transition: .5s;
+        transition: .5s;
+        margin-bottom: 7%;
+    }
 
-input[type=submit]:focus,
-input[type=submit]:hover {
-    background: plum;
-}
+    #eyecolor {
+        border: none;
+    }
 
-textarea {
-    height: 2em;
-    width: 12em;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    border: 2px solid midnightblue;
-}
+    input[type=submit] {
+        margin: 3em 30% 0;
+        height: 3em;
+        font-family: play;
+        text-transform: uppercase;
+        background: midnightblue;
+        border-radius: 0.8em;
+        color: white;
+    }
 
-input:hover,
-textarea:hover {
-    outline: 2px solid plum;
-}
+    input[type=submit]:focus,
+    input[type=submit]:hover {
+        background: plum;
+    }
 
-textarea:focus {
-    height: 4em;
-    width: 18em;
-}
+    textarea {
+        height: 2em;
+        width: 12em;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        border: 2px solid midnightblue;
+    }
 
-input:focus {
-    width: 18em;
-    outline: 2px solid midnightblue;
-}
+    input:hover,
+    textarea:hover {
+        outline: 2px solid plum;
+    }
 
-input:invalid {
-    outline: 2px solid plum;
-    border: none;
-}
+    textarea:focus {
+        height: 4em;
+        width: 18em;
+    }
 
-input[type=submit],
-input[type=color] {
-    outline: none;
-}
+    input:focus {
+        width: 18em;
+        outline: 2px solid midnightblue;
+    }
 
-input[type=submit]:focus,
-input[type=color]:focus {
-    width: 12em;
-}
+    input:invalid {
+        outline: 2px solid plum;
+        border: none;
+    }
+
+    input[type=submit],
+    input[type=color] {
+        outline: none;
+    }
+
+    input[type=submit]:focus,
+    input[type=color]:focus {
+        width: 12em;
+    }
