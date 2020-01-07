@@ -48,6 +48,12 @@ h4 {
     transition: 1s;
 }
 
+h6 {
+    font-family: play, sans-serif;
+    font-size: 1.5em;
+
+}
+
 h4.yay {
     opacity: 1;
 }
@@ -150,7 +156,6 @@ li:last-child {
 }
 
 
-
 /**** BODY ****/
 
 
@@ -185,6 +190,10 @@ section article {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    article {
+        min-height: 30em;
+    }
 }
 
 @media (min-width: 80em) {
@@ -192,6 +201,10 @@ section article {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding: 0 5em;
+    }
+
+    article {
+        min-height: 30em;
     }
 }
 
@@ -209,6 +222,7 @@ article img {
 .details {
     padding: 2vw;
     border: none;
+    padding: 0;
 }
 
 .details h2 {
@@ -232,10 +246,29 @@ article img {
 }
 
 article .phonesgrid {
-    height: auto;
-    width: 40%;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 1em;
+    column-gap: 3vw;
+    grid-row-gap: 2vw;
 }
+
+.phonesgrid img {
+    height: auto;
+}
+
+@media (min-width: 40em) {
+    article .phonesgrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0 4vw;
+    }
+}
+
+@media (min-width: 80em) {
+    article .phonesgrid {
+        padding: 0 8vw;
+}
+
 
 /**** ABOUT ****/
 .about {
