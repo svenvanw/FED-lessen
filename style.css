@@ -158,6 +158,53 @@ li:last-child {
 
 /**** BODY ALGEMEEN ****/
 
+.homepage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+svg {
+    margin-top: 10em;
+    height: auto;
+    width: 18em;
+    stroke: midnightblue;
+    stroke-width: 0.8em;
+    fill: midnightblue;
+    stroke-dasharray: 10600;
+    -webkit-animation: animate 5s linear;
+    animation: animate 5s linear;
+}
+
+@-webkit-keyframes animate {
+    0% {
+        opacity: 0;
+        stroke-dashoffset: 10600;
+        fill: none;
+    }
+
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 8000;
+    }
+
+    85% {
+        fill: rgba(25, 25, 112, 0);
+        stroke-dashoffset: 100;
+    }
+
+    100% {
+        fill: rgba(25, 25, 112, 1);
+        stroke-dashoffset: 0;
+        opacity: 10;
+    }
+}
+
+/* bron gebruikt bij animatie https://www.youtube.com/watch?v=k-SI1xHN0x8 */
 
 article {
     margin: 1%;
